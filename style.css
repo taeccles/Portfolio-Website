@@ -1,0 +1,329 @@
+/* this changes the fonts used for all the text and aligns all text to the centre */
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+
+img{
+    width: 50%;
+}
+
+/* this changes the background colour and height of the navbar */
+.navbar{
+    background-color: #5d83e9;
+    height: 1.5rem;
+}
+
+/* changes the elements with the navbar-right class to align to the right and adds padding  */
+.navbar-right{
+    float: right;
+    padding-left: 1rem;
+    padding-right: 0.5rem;
+}
+
+/* changes the element with the navbar-left id to align to the left and adds padding */
+#navbar-left{
+    float: left;
+    padding-left: 0.5rem;
+}
+
+/* this changes the colour of the text in the navbar, the font of the text in the navbar, and removes any underlining etc. from the text */
+.navbar a{
+    color: #ffffff;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* this enables the text to change colour when the user hovers the mouse over the text inside the navbar */
+.navbar a:hover{
+    color: #1127eb;
+}
+
+/* this changes the background of the body to use background2.png as the background */
+body{
+    background-image: url(./background2.png)
+}
+
+/* this changes the font colour of the body paragraphs and headings 1,2, and 3 to be white  */
+body p, h1, h2, h3{
+    color: #ffffff;
+}
+
+/* this changes the font size of headings 1,2, and 3 */
+h1,h2,h3{
+    font-size: 2rem;
+}
+
+/* this changes the font size of the body paragraphs */
+body p{
+    font-size: 1.2rem;
+}
+
+/* this changes the font, colour, font size, and removes any underline etc. from the link to my portfolio website repository */
+#portfolio-code{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+#thomas-suffix{
+    font-size: 1rem;
+    margin-bottom: 1.4rem;
+}
+
+/* this changes the colour of the portfolio website repository link to blue when hovered over */
+#portfolio-code:hover{
+    color: #1127eb;
+}
+
+/* adds space above the me2 image */
+#thomas-image2{
+    padding-top: 1.3rem;
+    border-radius: 40%;
+}
+
+/* adds a border and padding above and below the coding gif */
+#coding-gif{
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+    border-radius: 30%;
+}
+
+/* this changes the background colour of the footer and creates spaces between each of the elements inside the footer */
+.footer{
+    background-color: #5d83e9;
+    display:flex;
+    justify-content: space-between;
+    justify-content: space-evenly;
+    justify-content: space-around;
+}
+
+/* this changes the colour of the text in the footer, the font size of the text in the footer, the font of the text in the footer, and removes any underlining etc. from the text */     
+.footer a{
+    color: #ffffff;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+/* this changes the footer links to turn white when the mouse hovers over them */ 
+.footer a:hover{
+    color: #1127eb;
+}
+
+/* this creates padding around the contact-links container and wraps the images and text together on one line */
+#contact-links{
+    display: flex;
+    padding-top: 0.5rem;
+    padding-bottom: 3rem;
+}
+
+/* this changes the width and height of the contact images */
+.contact-images{
+    border-radius: 40%;
+}
+
+/* changes the font size and width of the text next to the image of me */
+#thomas-text{
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* changes the width of projects-image to 50%, adds padding, and adds a border */
+#projects-image{
+    width: 50%;
+    padding: 1.5rem;
+    border-radius: 20%;
+}
+
+/* changes the width, adds padding around the image of me, and adds a border */
+#thomas-image{
+    width: 70%;
+    padding: 0.5rem;
+    border-radius: 30%;
+}
+
+/* adds padding to the image of my qualification */
+#certificate-image{
+    padding-bottom: 2.5rem;
+}
+
+/* this changes the colour of the text, the font size, the font, and removes any underlining etc. from the link to my project website */
+#my-website{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2rem;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* this changes the project website link to turn blue when the mouse hovers over them */ 
+#my-website:hover{
+    color: #1127eb;
+}
+
+/* this is a media query which changes multiple elements when the minimum width of the screen size is 600px */
+@media screen and (min-width: 600px) {
+    * {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        text-align: center;
+        font-size: 1.1rem;
+    }
+    .footer{
+        height:2.5rem
+    }
+    .footer a{
+        font-size: 1.6rem;
+    }
+    .navbar{
+        height: 2.5rem;
+    }
+    .navbar a{
+        font-size: 1.4rem;
+    }
+    .navbar-right{
+        float: right;
+        padding-left: 0.5rem;
+        padding-right: 3rem;
+    }
+    #navbar-left{
+        float: left;
+        padding-left: 2rem;
+    }
+    img{
+        width: 50%;
+    }
+    #thomas-image2{
+        padding-top: 2.5rem;
+    }
+    #coding-gif{
+        padding-top: 2rem;
+        padding-bottom: 1.5rem;
+        border-radius: 30%;
+    }
+    }
+    #contact-links{
+        display: flex;
+        padding-top: 0.5rem;
+        padding-bottom: 3rem;
+    }
+    .thomas-bg{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    }
+    #thomas-text{
+    font-size: 22px;
+    width: 60%;
+    }
+    #projects-image{
+    width: 40%;
+    padding: 20px;
+    }
+    #thomas-image{
+    width: 30%;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    }
+    #contact-links{
+    display: flex;
+    padding-top: 0.5rem;
+    padding-bottom: 3rem;
+    }
+    .contact-images{
+    width: 70%;
+    height: 30%;
+    border-radius: 40%;
+    }
+    #thomas-suffix{
+        font-size: 2rem;
+        padding: 1rem;
+    }
+    #portfolio-code{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 1.5rem;
+    }
+    #coding-gif{
+        padding-top: 3rem;
+        border-radius: 30%;
+    }
+
+/* this is a media query which changes multiple elements when the minimum width of the screen size is 1200px */
+    @media screen and (min-width: 1200px) {
+    #img{
+        width: 40%;
+    }
+    #thomas-suffix{
+        font-size: 2rem;
+        padding: 1rem;
+    }
+    .footer{
+        height:2.5rem
+    }
+    .footer a{
+        font-size: 1.6rem;
+    }
+    .navbar{
+        height: 2.5rem;
+    }
+    .navbar a{
+        font-size: 1.8rem;
+    }
+    .navbar-right{
+        float: right;
+        padding-left: 0.5rem;
+        padding-right: 3rem;
+    }
+    #navbar-left{
+        float: left;
+        padding-left: 2rem;
+    }
+    #contact-links{
+    display: flex;
+    padding-top: 0.5rem;
+    padding-bottom: 3rem;
+    }
+    #coding-gif{
+        padding-top: 3rem;
+        border-radius: 30%;
+    }
+    .contact-images{
+        width: 40%;
+        height: 60%;
+        border-radius: 40%;
+        }
+}
+
+/* this is a media query which changes multiple elements when the minimum width of the screen size is 1500px */
+@media screen and (min-width: 1500px) {
+    img{
+        width: 20%;
+    }
+    #projects-image{
+        width: 20%;
+        padding: 20px;
+        }
+    #me{
+        width: 25%;
+        padding-top: 20px;
+        padding-bottom: 60px;
+        }
+    #thomas-text{
+         font-size: 2rem;
+            width: 40%;
+            text-align: left;
+            margin-right: 20rem
+        }
+    #coding-gif{
+    padding-top: 3rem;
+    border-radius: 30%;
+    }
+    .contact-images{
+        width: 40%;
+        height: 60%;
+        border-radius: 40%;
+        }
+}
